@@ -1,0 +1,5 @@
+package se01.ex;
+
+public enum Day {
+	MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDATY, SUNDAY
+}
