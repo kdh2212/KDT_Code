@@ -96,7 +96,7 @@
 					<span class="status">[${todo.completed ? '완료됨' : '미완료'}]</span>
 				</div>
 				<div class="actions">
-					<a href="update?id=${todo.id}">✏ 수정</a>
+					<a href="update/${todo.id}">✏ 수정</a>
 					<a href="delete/${todo.id}">🗑 삭제</a>
 				</div>
 			</li>

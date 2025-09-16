@@ -55,8 +55,8 @@ public class TodoController {
 		return "redirect:/";
 	}
 	
-	  @GetMapping("/update")
-	    public String showUpdateForm(@RequestParam("id") int id, Model model) {
+	  @GetMapping("/update/{id}")
+	    public String showUpdateForm(@PathVariable("id") int id, Model model) {
 	        Todo todo = todoDao.findById(id); // id로 조회
 	        model.addAttribute("todo", todo); // JSP에 넘김
 	        return "update"; // update.jsp 로 이동
